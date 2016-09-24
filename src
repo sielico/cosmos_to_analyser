@@ -1,0 +1,1 @@
+javascript:(function(){alert(document.getElementById("wikibody").innerhtml);})()
