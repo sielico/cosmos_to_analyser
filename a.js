@@ -25,7 +25,7 @@
   var fumen = base_html.substring(m0.length+1, base_html.indexOf("不"));
   var hold = "";
   if(fumen.indexOf("href")>0){
-    hold = "#holdbarrow=1<br />";
+    hold = "#holdbyarrow=1<br />";
   }
   var out_html = "<div align=left>" + t + o + m + level + title + artist + jacket + hold + memo2 + fumen + "</div>";
   document.body.innerHTML = out_html;
