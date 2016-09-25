@@ -4,9 +4,9 @@
     base_html = document.getElementById("wikibody").innerHTML;
   }else{
     var temp = document.body.innerHTML;
-    base_html = temp.substring(temp.indexOf("@@@@"));
+    base_html = temp.substring(temp.indexOf("wrapper"));
   }
-  var m = base_html.match(/[^p]*.*?<p>[\S\s]*?(.*?)<br.*?[\S\s](.*?)<br.*?[\S\s]<br.*?[\S\s](BASIC|ADVANCED|EXTREME)<br.*?[\S\s]<br.*?[\S\s]Le.*?(\d+).*?[\S\s]BP.*?(\d+).*?[\S\s]No.*?\d+.*?<br.*?[\S\s].*?<br.*?[\S\s]/m);
+  var m = base_html.match(/[.\S\s]*?<p>[\S\s]*?(.*?)<br.*?[\S\s](.*?)<br.*?[\S\s]<br.*?[\S\s](BASIC|ADVANCED|EXTREME)<br.*?[\S\s]<br.*?[\S\s]Le.*?(\d+).*?[\S\s]BP.*?(\d+).*?[\S\s]No.*?\d+.*?<br.*?[\S\s].*?<br.*?[\S\s]/m);
   console.log(m);
   var m0 = m[0];
   var m1 = m[1];
