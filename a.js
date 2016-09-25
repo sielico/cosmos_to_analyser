@@ -18,7 +18,8 @@
   var o = "o=0<br />";
   var m = '//m="' + m1 + '.mp3"<br />';
   var level = "#lev=" + m4 + "<br />";
-  var title = '#artist="' + m2 + '"<br />';
+  var title = '#title="' + m1 + '"<br />';
+  var artist = '#artist="' + m2 + '"<br />';
   var jacket = "//#jacket=\"" + m1 + '.png"<br />';
   var memo2 = "#memo2<br />";
   var fumen = base_html.substring(m0.length+1, base_html.indexOf("不"));
@@ -26,6 +27,6 @@
   if(fumen.indexOf("href")>0){
     hold = "#holdbarrow=1<br />";
   }
-  var out_html = "<div align=left>" + t + o + m + level + title + jacket + hold + memo2 + fumen + "</div>";
+  var out_html = "<div align=left>" + t + o + m + level + title + artist + jacket + hold + memo2 + fumen + "</div>";
   document.body.innerHTML = out_html;
 })()
